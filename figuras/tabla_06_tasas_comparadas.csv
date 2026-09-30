@@ -1,0 +1,6 @@
+borough,arrestos_encuesta,arrestos_oficial,graves_encuesta,graves_oficial,mismo_orden_arrestos,mismo_orden_graves
+Bronx,3437,3334,449,436,True,True
+Brooklyn,2270,2233,491,483,True,True
+Manhattan,3233,3113,381,367,True,True
+Queens,1969,1944,464,458,True,True
+Staten Island,1935,1908,360,354,True,True

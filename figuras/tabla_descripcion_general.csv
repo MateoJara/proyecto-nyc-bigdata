@@ -1,0 +1,7 @@
+fuente,id NYC Open Data,una fila es,registros,columnas,llave,CSV (MB),desde,hasta
+arrestos_historico,8h9b-rp9u,un arresto realizado por el NYPD,6264978,19,ARREST_KEY,1279.3,2006-01-01,2025-12-31
+arrestos_2026,uip8-fykc,un arresto realizado por el NYPD (año en curso),141870,19,ARREST_KEY,24.9,2026-01-01,2026-06-30
+choques,h9gi-nx95,un choque de tránsito reportado por la policía,2269187,29,COLLISION_ID,454.5,2012-07-01,2026-06-11
+vehiculos,bm4k-52h4,un vehículo involucrado en un choque,4551002,25,UNIQUE_ID,803.6,2012-07-01,2026-06-11
+pobreza,cts7-vksw,"una persona encuestada (ACS), con su peso poblacional",68273,61,SERIALNO + SPORDER,13.1,,
+sat_2012,f9bf-2cp4,un colegio de secundaria,478,6,DBN,0.0,,

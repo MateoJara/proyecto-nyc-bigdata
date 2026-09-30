@@ -1,0 +1,16 @@
+# Los datos viven en HDFS y en las VMs, no en git
+data/
+
+# API key de OpenWeatherMap y token de Socrata
+.env
+
+# Salida de scripts/ejecutar_notebooks.sh (los que se entregan van en entregas/)
+ejecutados/
+
+# Jupyter y Python
+.ipynb_checkpoints/
+__pycache__/
+
+# Archivos sueltos de Windows
+*.zip
+*.lnk

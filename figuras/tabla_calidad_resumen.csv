@@ -1,0 +1,6 @@
+tabla,filas_evaluadas,columnas,columnas_con_faltantes,celdas_faltantes_pct,columna_mas_incompleta,pct_mas_incompleta
+arrestos,1608509,18,10,1.07,age_group,9.15
+choques,848742,29,20,29.9,vehicle_type_code_5,99.38
+vehiculos,1715328,25,19,22.83,vehicle_model,99.45
+pobreza,68273,61,8,3.23,eng,55.01
+sat_2012,478,6,0,0.0,—,0.0

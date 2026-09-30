@@ -1,0 +1,6 @@
+# Los scripts corren en Linux: siempre con saltos de línea LF
+*.sh text eol=lf
+*.env text eol=lf
+
+# Página guardada tal cual: el notebook 06 verifica su SHA-256
+fuentes/*.html -text

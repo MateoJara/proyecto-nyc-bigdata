@@ -1,0 +1,12 @@
+# Librerías de Python. 02_base.sh las instala con las mismas versiones en las tres VMs.
+# PySpark no va aquí: se usa el que viene en /opt/spark, así la parte de Python y la
+# de la JVM siempre quedan en la misma versión.
+numpy>=1.26,<3
+pandas>=2.2,<3
+pyarrow>=15            # toPandas() y pandas UDFs vectorizadas
+matplotlib>=3.8
+jupyterlab>=4.2
+ipykernel>=6.29
+requests>=2.32
+shapely>=2.0           # spatial join de coordenadas contra fronteras de PUMA
+beautifulsoup4>=4.12   # bono de scraping: leer la tabla HTML de población

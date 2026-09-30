@@ -1,0 +1,7 @@
+fuente,filas,columnas,lineas_csv,registros_multilinea,CSV_MB,Parquet_MB,compresion_x,particiones,segundos
+arrestos_historico,6264978,19,6264979,0,1279.3,371.2,3.4,10,93.8
+arrestos_2026,141870,19,141871,0,24.9,5.8,4.3,8,4.5
+choques,2269187,29,2269189,1,454.5,87.9,5.2,8,37.2
+vehiculos,4551002,25,4551003,0,803.6,211.9,3.8,8,47.7
+pobreza,68273,61,68274,0,13.1,5.0,2.6,8,4.6
+sat_2012,478,6,479,0,0.0,0.0,0.7,8,2.0

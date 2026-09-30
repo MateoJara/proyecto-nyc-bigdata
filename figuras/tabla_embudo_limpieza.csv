@@ -1,0 +1,17 @@
+tabla,paso,registros
+arrestos,1. unión histórico + 2026,6406848
+arrestos,2. dentro del periodo 2019-01-01 a 2026-06-30,1608509
+arrestos,3. sin ARREST_KEY duplicados,1608509
+arrestos,4. escrito en plata,1608509
+choques,1. registros originales,2269187
+choques,2. dentro del periodo 2019-01-01 a 2026-05-31,846420
+choques,3. sin COLLISION_ID duplicados,846420
+choques,4. escrito en plata,846420
+vehiculos,1. registros originales,4551002
+vehiculos,2. dentro del periodo 2019-01-01 a 2026-05-31,1710836
+vehiculos,3. sin UNIQUE_ID duplicados,1710836
+vehiculos,4. escrito en plata,1710836
+pobreza,1. registros originales,68273
+pobreza,2. escrito en plata,68273
+sat,1. registros originales,478
+sat,2. escrito en plata,478
