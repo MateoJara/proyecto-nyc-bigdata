@@ -104,15 +104,15 @@ GRUPOS_CAUSA = [
 # Choques: grupos de tipo de vehículo. El campo es texto libre y tiene cientos de
 # escrituras; estos grupos cubren las frecuentes y el resto queda en "Otro".
 GRUPOS_VEHICULO = [
-    ("Micromovilidad eléctrica", r"E-BIKE|E BIKE|EBIKE|E-SCOOTER|E SCOOTER|ESCOOTER|E-BIK|E-SCO"),
-    ("Motocicleta", r"MOTORCYCLE|MOTORBIKE|MOPED|MOTORSCOOTER|MINIBIKE|MINICYCLE|SCOOTER"),
-    ("Bicicleta", r"BIKE|BICYCLE"),
+    ("Micromovilidad eléctrica", r"E-BIKE|E BIKE|EBIKE|E-SCOOTER|E SCOOTER|ESCOOTER|E-BIK|E-SCO|STANDING S"),
+    ("Motocicleta", r"MOTORCYCLE|MOTORBIKE|MOPED|MOPD|MOTORSCOOTER|MINIBIKE|MINICYCLE|SCOOTER"),
+    ("Bicicleta", r"BIKE|BICY"),
     ("Taxi", r"TAXI|LIVERY|LIMO"),
     ("Bus", r"BUS"),
-    ("Emergencia", r"AMBUL|FIRE|FDNY|EMS"),
+    ("Emergencia", r"AMBU|FIRE|FDNY|EMS"),
     ("Pickup o van", r"PICK|VAN|^PK$"),
-    ("Camión", r"TRUCK|TRACTOR|DUMP|FLAT BED|FLAT RACK|TANKER|GARBAGE|REFUSE|CONCRETE|BEVERAGE|ARMORED|CHASSIS|TRAILER|CARRY ALL|DELIV"),
-    ("Camioneta o SUV", r"SPORT UTILITY|STATION WAGON|SUV"),
+    ("Camión", r"TRUCK|TRACTOR|DUMP|FLAT BED|FLAT RACK|TANKER|GARBAGE|REFUSE|CONCRETE|BEVERAGE|ARMORED|CHASSIS|TRAILER|CARRY ALL|DELIV|DELV|STAKE"),
+    ("Camioneta o SUV", r"SPORT UTILITY|STATION WAGON|SUV|SUBN"),
     ("Automóvil", r"SEDAN|PASSENGER|CONVERTIBLE|2 DR|4 DR|3-DOOR|COUPE"),
 ]
 VEHICULO_OTRO = "Otro"
