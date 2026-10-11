@@ -16,6 +16,9 @@
 #   02_descripcion      describe bronce y los tipos de plata
 #   03_exploracion      gráficas sobre plata
 #   06_bono_scraping_poblacion  población oficial por borough (usa plata)
+#   07_capa_oro         plata -> oro: limpieza final, población por barrio y tablas agregadas
+#   08_respuestas       respuestas a las preguntas de negocio (usa oro)
+#   09_modelos          modelos de MLlib: supervisado, no supervisado y red neuronal (usa oro)
 set -euo pipefail
 
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
@@ -23,7 +26,7 @@ REPO="$(cd "$(dirname "$0")/.." && pwd)"
 source "${REPO}/infra/cluster.env"
 JUPYTER="${JUPYTER:-${VENV_DIR}/bin/jupyter}"
 ORDEN=("$@")
-[ ${#ORDEN[@]} -gt 0 ] || ORDEN=(00_cluster 01_ingesta 04_calidad 05_limpieza_inicial 02_descripcion 03_exploracion 06_bono_scraping_poblacion)
+[ ${#ORDEN[@]} -gt 0 ] || ORDEN=(00_cluster 01_ingesta 04_calidad 05_limpieza_inicial 02_descripcion 03_exploracion 06_bono_scraping_poblacion \n  07_capa_oro 08_respuestas 09_modelos)
 
 cd "$REPO"
 mkdir -p ejecutados figuras

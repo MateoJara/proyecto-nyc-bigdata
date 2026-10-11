@@ -75,3 +75,55 @@ ORDEN_DIAS = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "
 # SAT 2012 (f9bf-2cp4): la tercera letra del DBN es el borough ("01M292" es de
 # Manhattan). En 04_calidad se revisa que todas las letras sean válidas.
 SAT_BORO_DBN = {"X": "Bronx", "K": "Brooklyn", "M": "Manhattan", "Q": "Queens", "R": "Staten Island"}
+
+# Arrestos relacionados con el tránsito, según OFNS_DESC. Los de embriaguez aparecen con
+# dos escrituras distintas en el dataset ("&" y "/"), por eso se buscan con una expresión regular.
+ARRESTOS_TRANSITO_REGEX = r"TRAFFIC|INTOXICATED"
+ARRESTOS_EMBRIAGUEZ_REGEX = r"INTOXICATED"
+
+# Choques: grupos de causa a partir del factor contribuyente del primer vehículo.
+# El dataset trae unos 60 textos distintos (con variantes de mayúsculas y errores como
+# "Illnes"); se agrupan con expresiones regulares sobre el texto en mayúsculas. El orden
+# importa: se usa el primer grupo que coincida y lo que no coincide queda en "Otra causa".
+SIN_CAUSA = "Sin especificar"
+GRUPOS_CAUSA = [
+    ("Alcohol o drogas", r"ALCOHOL|DRUGS|PRESCRIPTION"),
+    ("Exceso de velocidad o agresividad", r"UNSAFE SPEED|AGGRESSIVE"),
+    ("Distracción del conductor", r"INATTENTION|DISTRACTION|CELL PHONE|TEXTING|ELECTRONIC|HEADPHONES|EATING|NAVIGATION"),
+    ("No ceder el paso", r"FAILURE TO YIELD"),
+    ("Irrespeto a señales", r"TRAFFIC CONTROL DISREGARDED|FAILURE TO KEEP RIGHT"),
+    ("Seguir muy de cerca", r"FOLLOWING TOO CLOSELY"),
+    ("Vía o entorno", r"PAVEMENT|OBSTRUCT|GLARE|ANIMALS|SHOULDERS|LANE MARKING|DEBRIS|TRAFFIC CONTROL DEVICE"),
+    ("Maniobra indebida", r"PASSING|LANE|TURNING|BACKING"),
+    ("Error de peatón o ciclista", r"PEDESTRIAN|BICYCLIST"),
+    ("Condición del conductor", r"FELL ASLEEP|FATIGUED|DROWSY|ILLNES|LOST CONSCIOUSNESS|INEXPERIENCE|PHYSICAL DISABILITY"),
+    ("Falla del vehículo", r"DEFECT|FAILURE|INADEQUATE|TOW HITCH|TINTED|WINDSHIELD|OVERSIZED|DRIVERLESS"),
+    ("Reacción a otro vehículo", r"REACTION TO|OTHER VEHICULAR|OUTSIDE CAR"),
+]
+
+# Choques: grupos de tipo de vehículo. El campo es texto libre y tiene cientos de
+# escrituras; estos grupos cubren las frecuentes y el resto queda en "Otro".
+GRUPOS_VEHICULO = [
+    ("Micromovilidad eléctrica", r"E-BIKE|E BIKE|EBIKE|E-SCOOTER|E SCOOTER|ESCOOTER|E-BIK|E-SCO"),
+    ("Motocicleta", r"MOTORCYCLE|MOTORBIKE|MOPED|MOTORSCOOTER|MINIBIKE|MINICYCLE|SCOOTER"),
+    ("Bicicleta", r"BIKE|BICYCLE"),
+    ("Taxi", r"TAXI|LIVERY|LIMO"),
+    ("Bus", r"BUS"),
+    ("Emergencia", r"AMBUL|FIRE|FDNY|EMS"),
+    ("Pickup o van", r"PICK|VAN|^PK$"),
+    ("Camión", r"TRUCK|TRACTOR|DUMP|FLAT BED|FLAT RACK|TANKER|GARBAGE|REFUSE|CONCRETE|BEVERAGE|ARMORED|CHASSIS|TRAILER|CARRY ALL|DELIV"),
+    ("Camioneta o SUV", r"SPORT UTILITY|STATION WAGON|SUV"),
+    ("Automóvil", r"SEDAN|PASSENGER|CONVERTIBLE|2 DR|4 DR|3-DOOR|COUPE"),
+]
+VEHICULO_OTRO = "Otro"
+# Grupos que se convierten en variables del modelo (¿había al menos uno en el choque?)
+BANDERAS_VEHICULO = {
+    "hay_moto": "Motocicleta",
+    "hay_bici": "Bicicleta",
+    "hay_micromovilidad": "Micromovilidad eléctrica",
+    "hay_camion": "Camión",
+    "hay_bus": "Bus",
+    "hay_taxi": "Taxi",
+}
+
+FRANJAS = ["Madrugada (0-5)", "Mañana (6-11)", "Tarde (12-17)", "Noche (18-23)"]

@@ -94,3 +94,21 @@ def borough_desde_puma(col_puma):
     """Expresión de Spark con el nombre del borough según el código de PUMA."""
     mapa = F.create_map(*[F.lit(x) for kv in BOROUGH_POR_PREFIJO.items() for x in kv])
     return mapa[F.substring(col_puma, 1, 2)]
+
+
+def dibujar_pumas(ax, pumas, colores, sin_dato="#e4e3df", borde="white"):
+    """Dibuja el mapa de las 55 PUMAs en un eje de matplotlib. `colores` es un diccionario
+    {puma: color}; las PUMAs que no estén ahí salen en gris. `pumas` es lo que devuelve
+    cargar_pumas(). Se usa solo para las figuras: los cálculos no pasan por aquí."""
+    import math
+
+    import shapely
+
+    for puma, wkb in zip(pumas["puma"], pumas["wkb"]):
+        geom = shapely.from_wkb(wkb)
+        for poligono in getattr(geom, "geoms", [geom]):   # una PUMA puede tener varias partes (islas)
+            x, y = poligono.exterior.xy
+            ax.fill(list(x), list(y), facecolor=colores.get(puma, sin_dato), edgecolor=borde, linewidth=0.5)
+    # un grado de longitud mide menos que uno de latitud; sin esto la ciudad sale aplastada
+    ax.set_aspect(1 / math.cos(math.radians((LAT_MIN + LAT_MAX) / 2)))
+    ax.set_axis_off()
