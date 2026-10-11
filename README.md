@@ -24,11 +24,11 @@ arrestos en una zona pueden significar más delitos o más presencia policial.
 | Entrega | Contenido | Dónde |
 |---|---|---|
 | Primera (entendimiento del negocio y de los datos) | Documento en PDF y notebooks ejecutados en el cluster | [`entregas/primera_entrega/`](entregas/primera_entrega/) |
-| Final (preparación, modelos y resultados) | En desarrollo | |
+| Final (preparación, respuestas, modelos y recomendaciones) | Documento completo en PDF y notebooks 07 a 09 ejecutados en el cluster | [`entregas/entrega_final/`](entregas/entrega_final/) |
 
 ## Preguntas de negocio
 
-Se responden en la entrega final.
+Se responden en el numeral 10 del documento final y en el notebook `08_respuestas`.
 
 1. ¿Cuál es la tasa de arrestos por cada 100.000 habitantes en cada distrito y en cada barrio, y cómo ha cambiado entre 2019 y 2026?
 2. ¿Los distritos con mayor tasa de pobreza presentan también una mayor tasa de arrestos por habitante, y esta relación se mantiene al separar felonías de delitos menores?
@@ -50,17 +50,31 @@ Se responden en la entrega final.
 | Pobreza (microdatos ACS 2018, NYC Opportunity) | [NYC Open Data `cts7-vksw`](https://data.cityofnewyork.us/d/cts7-vksw) | 68 mil personas |
 | Resultados del SAT 2012 | [NYC Open Data `f9bf-2cp4`](https://data.cityofnewyork.us/d/f9bf-2cp4) | 478 colegios |
 | Límites de los 55 barrios (PUMA 2010) | [NYC Open Data `k2r4-n9ax`](https://data.cityofnewyork.us/d/k2r4-n9ax) | 55 polígonos |
+| Población 2010 por vecindario (NTA) | [NYC Open Data `swpk-hqdp`](https://data.cityofnewyork.us/d/swpk-hqdp) | 195 vecindarios |
+| Equivalencia entre vecindarios y barrios (PUMA) | [NYC Open Data `8ius-dhrr`](https://data.cityofnewyork.us/d/8ius-dhrr) | 2.168 sectores censales |
 | Población, área y densidad por condado 2018 (scraping) | [NYS Department of Health, Vital Statistics 2018, tabla 2](https://www.health.ny.gov/statistics/vital_statistics/2018/table02.htm) | 62 condados |
 
 El periodo de análisis va de 2019 a 2025 más el primer semestre de 2026, y se trabaja en dos
 niveles: los 5 boroughs y los 55 barrios (PUMA).
+
+## Resultados principales
+
+- La tasa anual de arrestos va de 3.334 por cada 100.000 habitantes en el Bronx a 1.908 en Staten Island, y entre 2019 y 2025 subió en 50 de los 55 barrios.
+- El 34,2 % de los choques deja heridos o muertos. La proporción supera el 80 % cuando participa una bicicleta o un vehículo de micromovilidad eléctrica y el 70 % con motocicletas.
+- El 38 % de los choques graves ocurre entre las 14:00 y las 20:00, con el máximo a las 17:00 de los días laborales y un patrón casi igual en los cinco distritos.
+- Siete barrios están en la cuarta parte más alta tanto de arrestos como de choques graves, y son los que el plan de acción propone priorizar.
+- Un Random Forest distingue los choques con víctimas con un AUC-ROC de 0,786 (regresión logística: 0,721; red neuronal: 0,785). Lo que más pesa es quién participa en el choque y por qué ocurre, no dónde ni cuándo.
+- K-Means agrupa los 55 barrios en cuatro perfiles, con una silueta de 0,30.
+
+![Barrios prioritarios](figuras/08_12_barrios_prioritarios.png)
 
 ## Cluster
 
 Spark 4.1.3 en modo standalone sobre tres VMs con Rocky Linux 9 (4 cores y 15,7 GB cada una),
 con HDFS 3.5.0 para que los tres workers lean y escriban los mismos datos. En total son 8
 executors, 8 cores y 20 GB de memoria para ejecutar. Los datos pasan por cuatro capas en HDFS:
-cruda (CSV), bronce (Parquet como texto), plata (tipado y limpio) y oro (agregados).
+cruda (CSV), bronce (Parquet como texto), plata (tipado y limpio) y oro (agregados). Los modelos se
+entrenan con MLlib sobre la capa oro.
 
 El diseño, los recursos de cada máquina, los puertos y el registro de la instalación están en
 [`docs/arquitectura.md`](docs/arquitectura.md).
@@ -79,9 +93,16 @@ proyecto-nyc-bigdata/
 ```
 
 Los notebooks se corren en este orden: `00_cluster`, `01_ingesta`, `04_calidad`,
-`05_limpieza_inicial`, `02_descripcion`, `03_exploracion` y `06_bono_scraping_poblacion`. La
-limpieza (05) va antes de la descripción y la exploración porque esas dos trabajan sobre la capa
-plata.
+`05_limpieza_inicial`, `02_descripcion`, `03_exploracion`, `06_bono_scraping_poblacion`,
+`07_capa_oro`, `08_respuestas` y `09_modelos`. La limpieza (05) va antes de la descripción y la
+exploración porque esas dos trabajan sobre la capa plata, y la capa oro (07) va antes de las
+respuestas y los modelos.
+
+| Notebook | Qué hace |
+|---|---|
+| `07_capa_oro` | Población por barrio, limpieza final, filtros y tablas agregadas |
+| `08_respuestas` | Tablas y gráficas que responden las ocho preguntas de negocio |
+| `09_modelos` | Random Forest, regresión logística, red neuronal (MLP) y K-Means con MLlib |
 
 ## Cómo reproducirlo
 

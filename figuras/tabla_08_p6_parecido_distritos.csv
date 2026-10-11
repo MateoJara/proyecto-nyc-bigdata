@@ -1,0 +1,6 @@
+borough,Bronx,Brooklyn,Manhattan,Queens,Staten Island
+Bronx,1.0,0.98,0.96,0.97,0.92
+Brooklyn,0.98,1.0,0.97,0.98,0.92
+Manhattan,0.96,0.97,1.0,0.94,0.89
+Queens,0.97,0.98,0.94,1.0,0.94
+Staten Island,0.92,0.92,0.89,0.94,1.0

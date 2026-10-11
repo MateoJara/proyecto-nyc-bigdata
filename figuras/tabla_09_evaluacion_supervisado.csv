@@ -1,0 +1,5 @@
+modelo,AUC-ROC,AUC-PR,precisión (grave),sensibilidad (grave),F1 (grave),especificidad,exactitud,VP,FP,FN,VN
+Regresión logística,0.7207,0.6179,0.573,0.5499,0.5612,0.7872,0.7061,29933.0,22305.0,24504.0,82512.0
+Random Forest,0.7863,0.7027,0.6691,0.5932,0.6289,0.8476,0.7607,32293.0,15973.0,22144.0,88844.0
+Red neuronal (MLP),0.7849,0.7026,0.6533,0.6055,0.6285,0.8331,0.7553,32960.0,17495.0,21477.0,87322.0
+Referencia: siempre 'sin víctimas',0.5,0.3418,0.0,0.0,0.0,1.0,0.6582,,,,

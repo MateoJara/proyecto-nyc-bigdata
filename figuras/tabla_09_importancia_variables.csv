@@ -1,0 +1,14 @@
+,importancia
+n_vehiculos,0.411
+hay_bici,0.2006
+hay_micromovilidad,0.1077
+causa,0.1059
+hay_moto,0.0813
+borough,0.0185
+hora_cos,0.0165
+hora_sen,0.0156
+mes,0.0138
+dia_semana,0.012
+hay_camion,0.0109
+hay_taxi,0.004
+hay_bus,0.0021

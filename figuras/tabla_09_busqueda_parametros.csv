@@ -1,0 +1,17 @@
+técnica,parámetros,AUC-ROC validación
+Regresión logística,"regParam=0.0, elasticNetParam=0.0",0.7209
+Regresión logística,"regParam=0.0, elasticNetParam=0.5",0.7209
+Regresión logística,"regParam=0.01, elasticNetParam=0.0",0.7207
+Regresión logística,"regParam=0.01, elasticNetParam=0.5",0.7202
+Regresión logística,"regParam=0.1, elasticNetParam=0.0",0.7194
+Regresión logística,"regParam=0.1, elasticNetParam=0.5",0.6962
+Random Forest,"numTrees=40, maxDepth=6",0.774
+Random Forest,"numTrees=40, maxDepth=10",0.7831
+Random Forest,"numTrees=40, maxDepth=14",0.7841
+Random Forest,"numTrees=80, maxDepth=6",0.7755
+Random Forest,"numTrees=80, maxDepth=10",0.7833
+Random Forest,"numTrees=80, maxDepth=14",0.7843
+Red neuronal (MLP),"layers=[39, 16, 2], maxIter=60",0.7661
+Red neuronal (MLP),"layers=[39, 16, 2], maxIter=120",0.7626
+Red neuronal (MLP),"layers=[39, 32, 16, 2], maxIter=60",0.7841
+Red neuronal (MLP),"layers=[39, 32, 16, 2], maxIter=120",0.785

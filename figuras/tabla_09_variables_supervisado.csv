@@ -1,0 +1,14 @@
+variable,tipo,descripción
+hora_sen,numérica,hora del choque (componente seno)
+hora_cos,numérica,hora del choque (componente coseno)
+n_vehiculos,numérica,número de vehículos involucrados
+hay_moto,numérica,1 si participó una motocicleta
+hay_bici,numérica,1 si participó una bicicleta
+hay_micromovilidad,numérica,1 si participó una bicicleta o patineta eléctrica
+hay_camion,numérica,1 si participó un camión
+hay_bus,numérica,1 si participó un bus
+hay_taxi,numérica,1 si participó un taxi
+mes,numérica,mes del año (1 a 12)
+causa,categórica,"causa del choque (12 grupos, más 'Otra causa' y 'Sin especificar')"
+borough,categórica,distrito (5)
+dia_semana,categórica,día de la semana (7)

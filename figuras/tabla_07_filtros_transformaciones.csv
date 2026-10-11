@@ -1,0 +1,14 @@
+tipo,tabla,procedimiento,efecto
+transformación,población,población 2010 por vecindario sumada a los 55 barrios y ajustada a 2018 con el factor de su borough,"55 barrios, de 109.327 a 253.742 habitantes"
+transformación,arrestos,marca de arrestos de tránsito y de embriaguez según OFNS_DESC,"122.156 de tránsito (7.6 %), de ellos 24.251 por embriaguez"
+decisión,arrestos,la edad vacía no se imputa; los análisis por edad excluyen los años con más de 5 % sin dato,años excluidos de análisis por edad: [2025]
+transformación,choques,total de heridos y muertos reconstruido con el desglose cuando viene vacío; gravedad recalculada,1 totales de heridos vacíos y 6559 de muertos; 11 choques cambian de gravedad
+transformación,choques,61 textos de factor contribuyente agrupados en 14 causas,"25.2 % sin especificar, 0.0 % en 'Otra causa'"
+transformación,vehículos,1653 textos de tipo de vehículo agrupados en 12 tipos,"0.4 % en 'Otro', 11.0 % sin dato"
+transformación,choques,"franja horaria, fin de semana, número de vehículos y presencia de moto, bicicleta, micromovilidad, camión, bus y taxi","tabla choques_modelo con 846.420 filas, una por choque; 34.2 % graves"
+filtro,arrestos,años completos 2019 a 2025 (para promedios anuales),1.608.509 -> 1.466.639 (91.2 %)
+filtro,arrestos,con barrio (coordenadas válidas dentro de una PUMA),1.466.639 -> 1.466.463 (100.0 %)
+filtro,arrestos,con borough,1.466.639 -> 1.466.639 (100.0 %)
+filtro,choques,años completos 2019 a 2025 (para promedios anuales),846.420 -> 812.318 (96.0 %)
+filtro,choques,con barrio (coordenadas válidas dentro de una PUMA),812.318 -> 745.375 (91.8 %)
+filtro,choques,con borough,812.318 -> 762.987 (93.9 %)
