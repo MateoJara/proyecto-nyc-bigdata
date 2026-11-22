@@ -29,7 +29,7 @@ y por eso la gravedad se calcula sobre los choques con lesionados.
 | Entrega | Contenido | Dónde |
 |---|---|---|
 | Primera (entendimiento del negocio y de los datos) | Documento en PDF y notebooks 00 a 06 ejecutados en el cluster | [`entregas/primera_entrega/`](entregas/primera_entrega/) |
-| Final, 23-nov-2026 (preparación, respuestas, modelos y recomendaciones) | Documento en PDF y notebooks 07 a 11 ejecutados en el cluster | [`entregas/entrega_final/`](entregas/entrega_final/) |
+| Final, 23-nov-2026 (preparación, respuestas, modelos y recomendaciones) | Documento en PDF, presentación de la sustentación y notebooks 07 a 11 ejecutados en el cluster | [`entregas/entrega_final/`](entregas/entrega_final/) |
 
 ## Preguntas de negocio
 
@@ -62,7 +62,8 @@ original viene cada una. La novena la responde el modelo de `11_modelos`.
 | Población por condado 2018 (scraping) | [NYS Department of Health](https://www.health.ny.gov/statistics/vital_statistics/2018/table02.htm) | Bono de la primera entrega |
 
 Las citas y la bibliografía del documento las hicimos con Zotero en APA 7. Las referencias están en
-[`fuentes/referencias_entrega_final.bib`](fuentes/referencias_entrega_final.bib).
+[`fuentes/referencias_entrega_final.bib`](fuentes/referencias_entrega_final.bib). Las capturas que muestran la biblioteca y
+las citas enlazadas en Word están en [`Evidencia_Zotero.pdf`](entregas/entrega_final/Evidencia_Zotero.pdf).
 
 ## Resultados principales
 
