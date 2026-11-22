@@ -52,6 +52,11 @@ def miles(x, _pos=None):
     return f"{x:,.0f}".replace(",", ".")
 
 
+def dec(x, n=1):
+    """Número con coma decimal y punto de miles (1234.56 -> 1.234,6)."""
+    return f"{x:,.{n}f}".replace(",", "_").replace(".", ",").replace("_", ".")
+
+
 def guardar(fig, nombre):
     """Guarda la figura en ../figuras/<nombre>.png para usarla en el documento."""
     fig.savefig(f"../figuras/{nombre}.png")

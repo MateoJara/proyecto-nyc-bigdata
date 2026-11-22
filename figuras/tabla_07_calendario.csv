@@ -1,0 +1,159 @@
+fecha,nombre,tipo
+2019-01-01,Año Nuevo,festivo
+2019-01-21,Martin Luther King,festivo
+2019-02-18,Día de los Presidentes,festivo
+2019-05-27,Memorial Day,festivo
+2019-07-04,Independencia,festivo
+2019-09-02,Día del Trabajo,festivo
+2019-10-14,Columbus Day,festivo
+2019-11-11,Día de los Veteranos,festivo
+2019-11-28,Acción de Gracias,festivo
+2019-12-25,Navidad,festivo
+2019-12-31,Nochevieja,evento
+2019-07-03,Víspera de Independencia,evento
+2019-07-04,Noche de Independencia,evento
+2019-10-31,Halloween,evento
+2019-03-17,San Patricio,evento
+2019-11-27,Víspera de Acción de Gracias,evento
+2019-05-26,Víspera de Memorial Day,evento
+2019-09-01,Víspera del Día del Trabajo,evento
+2020-01-01,Año Nuevo,festivo
+2020-01-20,Martin Luther King,festivo
+2020-02-17,Día de los Presidentes,festivo
+2020-05-25,Memorial Day,festivo
+2020-07-03,Independencia,festivo
+2020-09-07,Día del Trabajo,festivo
+2020-10-12,Columbus Day,festivo
+2020-11-11,Día de los Veteranos,festivo
+2020-11-26,Acción de Gracias,festivo
+2020-12-25,Navidad,festivo
+2020-12-31,Nochevieja,evento
+2020-07-03,Víspera de Independencia,evento
+2020-07-04,Noche de Independencia,evento
+2020-10-31,Halloween,evento
+2020-03-17,San Patricio,evento
+2020-11-25,Víspera de Acción de Gracias,evento
+2020-05-24,Víspera de Memorial Day,evento
+2020-09-06,Víspera del Día del Trabajo,evento
+2021-01-01,Año Nuevo,festivo
+2021-01-18,Martin Luther King,festivo
+2021-02-15,Día de los Presidentes,festivo
+2021-05-31,Memorial Day,festivo
+2021-07-05,Independencia,festivo
+2021-09-06,Día del Trabajo,festivo
+2021-10-11,Columbus Day,festivo
+2021-11-11,Día de los Veteranos,festivo
+2021-11-25,Acción de Gracias,festivo
+2021-12-24,Navidad,festivo
+2021-06-18,Juneteenth,festivo
+2021-12-31,Nochevieja,evento
+2021-07-03,Víspera de Independencia,evento
+2021-07-04,Noche de Independencia,evento
+2021-10-31,Halloween,evento
+2021-03-17,San Patricio,evento
+2021-11-24,Víspera de Acción de Gracias,evento
+2021-05-30,Víspera de Memorial Day,evento
+2021-09-05,Víspera del Día del Trabajo,evento
+2021-12-31,Año Nuevo,festivo
+2022-01-17,Martin Luther King,festivo
+2022-02-21,Día de los Presidentes,festivo
+2022-05-30,Memorial Day,festivo
+2022-07-04,Independencia,festivo
+2022-09-05,Día del Trabajo,festivo
+2022-10-10,Columbus Day,festivo
+2022-11-11,Día de los Veteranos,festivo
+2022-11-24,Acción de Gracias,festivo
+2022-12-26,Navidad,festivo
+2022-06-20,Juneteenth,festivo
+2022-12-31,Nochevieja,evento
+2022-07-03,Víspera de Independencia,evento
+2022-07-04,Noche de Independencia,evento
+2022-10-31,Halloween,evento
+2022-03-17,San Patricio,evento
+2022-11-23,Víspera de Acción de Gracias,evento
+2022-05-29,Víspera de Memorial Day,evento
+2022-09-04,Víspera del Día del Trabajo,evento
+2023-01-02,Año Nuevo,festivo
+2023-01-16,Martin Luther King,festivo
+2023-02-20,Día de los Presidentes,festivo
+2023-05-29,Memorial Day,festivo
+2023-07-04,Independencia,festivo
+2023-09-04,Día del Trabajo,festivo
+2023-10-09,Columbus Day,festivo
+2023-11-10,Día de los Veteranos,festivo
+2023-11-23,Acción de Gracias,festivo
+2023-12-25,Navidad,festivo
+2023-06-19,Juneteenth,festivo
+2023-12-31,Nochevieja,evento
+2023-07-03,Víspera de Independencia,evento
+2023-07-04,Noche de Independencia,evento
+2023-10-31,Halloween,evento
+2023-03-17,San Patricio,evento
+2023-11-22,Víspera de Acción de Gracias,evento
+2023-05-28,Víspera de Memorial Day,evento
+2023-09-03,Víspera del Día del Trabajo,evento
+2024-01-01,Año Nuevo,festivo
+2024-01-15,Martin Luther King,festivo
+2024-02-19,Día de los Presidentes,festivo
+2024-05-27,Memorial Day,festivo
+2024-07-04,Independencia,festivo
+2024-09-02,Día del Trabajo,festivo
+2024-10-14,Columbus Day,festivo
+2024-11-11,Día de los Veteranos,festivo
+2024-11-28,Acción de Gracias,festivo
+2024-12-25,Navidad,festivo
+2024-06-19,Juneteenth,festivo
+2024-12-31,Nochevieja,evento
+2024-07-03,Víspera de Independencia,evento
+2024-07-04,Noche de Independencia,evento
+2024-10-31,Halloween,evento
+2024-03-17,San Patricio,evento
+2024-11-27,Víspera de Acción de Gracias,evento
+2024-05-26,Víspera de Memorial Day,evento
+2024-09-01,Víspera del Día del Trabajo,evento
+2025-01-01,Año Nuevo,festivo
+2025-01-20,Martin Luther King,festivo
+2025-02-17,Día de los Presidentes,festivo
+2025-05-26,Memorial Day,festivo
+2025-07-04,Independencia,festivo
+2025-09-01,Día del Trabajo,festivo
+2025-10-13,Columbus Day,festivo
+2025-11-11,Día de los Veteranos,festivo
+2025-11-27,Acción de Gracias,festivo
+2025-12-25,Navidad,festivo
+2025-06-19,Juneteenth,festivo
+2025-12-31,Nochevieja,evento
+2025-07-03,Víspera de Independencia,evento
+2025-07-04,Noche de Independencia,evento
+2025-10-31,Halloween,evento
+2025-03-17,San Patricio,evento
+2025-11-26,Víspera de Acción de Gracias,evento
+2025-05-25,Víspera de Memorial Day,evento
+2025-08-31,Víspera del Día del Trabajo,evento
+2026-01-01,Año Nuevo,festivo
+2026-01-19,Martin Luther King,festivo
+2026-02-16,Día de los Presidentes,festivo
+2026-05-25,Memorial Day,festivo
+2026-07-03,Independencia,festivo
+2026-09-07,Día del Trabajo,festivo
+2026-10-12,Columbus Day,festivo
+2026-11-11,Día de los Veteranos,festivo
+2026-11-26,Acción de Gracias,festivo
+2026-12-25,Navidad,festivo
+2026-06-19,Juneteenth,festivo
+2026-12-31,Nochevieja,evento
+2026-07-03,Víspera de Independencia,evento
+2026-07-04,Noche de Independencia,evento
+2026-10-31,Halloween,evento
+2026-03-17,San Patricio,evento
+2026-11-25,Víspera de Acción de Gracias,evento
+2026-05-24,Víspera de Memorial Day,evento
+2026-09-06,Víspera del Día del Trabajo,evento
+2019-02-03,Super Bowl,evento
+2020-02-02,Super Bowl,evento
+2021-02-07,Super Bowl,evento
+2022-02-13,Super Bowl,evento
+2023-02-12,Super Bowl,evento
+2024-02-11,Super Bowl,evento
+2025-02-09,Super Bowl,evento
+2026-02-08,Super Bowl,evento

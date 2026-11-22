@@ -1,0 +1,20 @@
+entrenamiento,segundos
+"Regresión logística {'regParam': 0.0, 'elasticNetParam': 0.0}",26.8
+"Regresión logística {'regParam': 0.0, 'elasticNetParam': 0.5}",17.3
+"Regresión logística {'regParam': 0.01, 'elasticNetParam': 0.0}",13.6
+"Regresión logística {'regParam': 0.01, 'elasticNetParam': 0.5}",14.0
+"Random Forest {'numTrees': 40, 'maxDepth': 6}",10.9
+"Random Forest {'numTrees': 80, 'maxDepth': 6}",13.4
+"Random Forest {'numTrees': 40, 'maxDepth': 9}",12.8
+"Gradient-Boosted Trees {'maxIter': 30, 'maxDepth': 4, 'stepSize': 0.1}",23.9
+"Gradient-Boosted Trees {'maxIter': 60, 'maxDepth': 4, 'stepSize': 0.05}",41.4
+"Gradient-Boosted Trees {'maxIter': 30, 'maxDepth': 5, 'stepSize': 0.1}",24.3
+Gradient-Boosted Trees final,52.4
+Random Forest final,7.2
+Regresión logística final,13.5
+"MLP [87, 16, 2] it=50",14.4
+"MLP [87, 16, 2] it=100",22.1
+"MLP [87, 32, 16, 2] it=50",10.6
+"MLP [87, 32, 16, 2] it=100",23.7
+MLP final,16.9
+K-Means k=3,1.1

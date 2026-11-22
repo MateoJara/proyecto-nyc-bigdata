@@ -1,0 +1,5 @@
+producto,http,mensaje
+actual,200.0,
+pronostico_5_dias,200,0
+historico_por_hora,401,Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.
+estadisticas_anuales,401,Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.

@@ -1,0 +1,56 @@
+puma,barrio,borough,poblacion_2020,tasa_ksi_noche,tasa_dwi,percentil_riesgo,percentil_control,brecha,brecha_residuo
+3807,Hudson Yards-Chelsea-Flat Iron-Union Square,Manhattan,184640,15.49,24.372,0.963,0.204,0.759,0.369
+3809,Lower East Side,Manhattan,164237,11.447,22.528,0.833,0.093,0.741,0.395
+4010,Rugby-Remsen Village,Brooklyn,143132,11.598,22.636,0.852,0.13,0.722,0.392
+3705,East Tremont,Bronx,178035,15.952,28.534,0.981,0.352,0.63,0.217
+4006,Crown Heights North,Brooklyn,137748,12.487,27.006,0.889,0.315,0.574,0.229
+3808,Turtle Bay-East Midtown,Manhattan,163839,8.423,12.451,0.537,0.037,0.5,0.931
+4004,Clinton Hill,Brooklyn,152369,9.319,23.233,0.648,0.148,0.5,0.328
+3707,University Heights-Morris Heights,Bronx,140204,15.263,31.24,0.944,0.463,0.481,0.119
+4007,Brownsville,Brooklyn,134109,10.588,29.379,0.815,0.389,0.426,0.116
+4009,Canarsie,Brooklyn,204005,10.49,28.627,0.778,0.37,0.407,0.141
+4011,Prospect Lefferts Gardens-Wingate,Brooklyn,110492,9.412,26.608,0.667,0.278,0.389,0.195
+4109,Hunters Point-Sunnyside-West Maspeth,Queens,161386,8.799,26.272,0.593,0.241,0.352,0.196
+3701,Van Cortlandt Village,Bronx,113700,8.619,26.385,0.574,0.259,0.315,0.188
+3708,East Concourse-Concourse Village,Bronx,144789,11.741,33.014,0.87,0.556,0.315,0.018
+3702,Williamsbridge-Olinville,Bronx,148709,10.49,32.816,0.796,0.519,0.278,0.005
+4008,East New York,Brooklyn,169668,12.613,36.07,0.907,0.667,0.241,-0.058
+3801,Washington Heights South,Manhattan,188800,9.428,32.733,0.685,0.5,0.185,-0.011
+3805,Lenox Hill-Roosevelt Island,Manhattan,231983,5.604,6.38,0.148,0.0,0.148,1.521
+4113,South Ozone Park,Queens,130378,13.499,42.338,0.926,0.778,0.148,-0.206
+4016,Sheepshead Bay-Gerritsen Beach-Manhattn Bch,Brooklyn,156693,7.148,24.124,0.333,0.185,0.148,0.245
+4105,Queens Village,Queens,199518,9.523,33.18,0.704,0.574,0.13,-0.023
+3803,Central Harlem North-Polo Grounds,Manhattan,134068,8.503,30.731,0.556,0.426,0.13,0.033
+3810,West Village,Manhattan,169739,6.127,20.266,0.204,0.074,0.13,0.391
+3806,Upper West Side,Manhattan,207780,4.909,10.973,0.111,0.019,0.093,0.962
+3710,Mott Haven-Port Morris,Bronx,159561,18.175,51.516,1.0,0.926,0.074,-0.349
+4103,Flushing,Queens,270930,6.053,22.589,0.185,0.111,0.074,0.281
+4015,Flatbush,Brooklyn,162557,4.798,14.272,0.093,0.056,0.037,0.698
+3709,Soundview-Castle Hill-Clason Point-Harding Park,Bronx,198808,7.746,29.476,0.426,0.407,0.019,0.059
+4001,North Side-South Side,Brooklyn,176207,9.534,36.548,0.722,0.704,0.019,-0.119
+4101,Astoria,Queens,186920,8.132,32.42,0.481,0.481,0.0,-0.028
+3704,Bronxdale,Bronx,130351,6.137,25.777,0.222,0.222,0.0,0.152
+4112,Jamaica,Queens,251096,8.363,34.329,0.519,0.593,-0.074,-0.08
+4002,Bushwick South,Brooklyn,136869,10.083,45.591,0.759,0.833,-0.074,-0.33
+4018,Brighton Beach,Brooklyn,120104,6.328,27.31,0.241,0.333,-0.093,0.1
+4003,Bedford,Brooklyn,153236,8.223,35.501,0.5,0.611,-0.111,-0.116
+3802,Morningside Heights,Manhattan,127022,8.975,37.789,0.611,0.741,-0.13,-0.163
+3804,East Harlem North,Manhattan,122143,9.988,49.778,0.741,0.889,-0.148,-0.42
+4017,Bensonhurst West,Brooklyn,198527,4.332,23.977,0.019,0.167,-0.148,0.164
+4014,Borough Park,Brooklyn,176543,5.324,26.962,0.13,0.296,-0.167,0.083
+4110,Ridgewood,Queens,179263,7.475,35.702,0.389,0.63,-0.241,-0.138
+4106,Briarwood-Jamaica Hills,Queens,164781,7.04,32.892,0.296,0.537,-0.241,-0.067
+4107,Elmhurst,Queens,153099,9.144,61.921,0.63,0.944,-0.315,-0.653
+4111,Richmond Hill,Queens,151876,7.374,36.345,0.37,0.685,-0.315,-0.159
+3706,Bedford Park-Fordham North,Bronx,134660,6.683,35.794,0.278,0.648,-0.37,-0.16
+3901,Great Kills,Staten Island,164398,4.501,30.779,0.056,0.444,-0.389,-0.078
+4104,Bayside-Bayside Hills,Queens,122366,7.518,42.986,0.407,0.796,-0.389,-0.323
+3703,Schuylerville-Throgs Neck-Edgewater Park,Bronx,123837,7.752,64.117,0.444,0.963,-0.519,-0.716
+3902,New Springville-Bloomfield-Travis,Staten Island,141686,7.34,46.441,0.352,0.87,-0.519,-0.404
+4005,Park Slope-Gowanus,Brooklyn,115390,7.106,46.278,0.315,0.852,-0.537,-0.406
+4102,Jackson Heights,Queens,189960,8.002,91.493,0.463,1.0,-0.537,-1.066
+4012,Sunset Park East,Brooklyn,155282,6.44,44.178,0.259,0.815,-0.556,-0.377
+4013,Bay Ridge,Brooklyn,133143,4.506,40.708,0.074,0.759,-0.685,-0.357
+4108,Forest Hills,Queens,119706,3.174,36.59,0.0,0.722,-0.722,-0.31
+3903,West New Brighton-New Brighton-St. George,Staten Island,189663,5.905,69.175,0.167,0.981,-0.815,-0.839
+4114,Far Rockaway-Bayswater,Queens,124185,4.348,50.087,0.037,0.907,-0.87,-0.57

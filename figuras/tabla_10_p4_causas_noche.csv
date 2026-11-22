@@ -1,0 +1,15 @@
+causa,con_lesionados,ksi,ksi_por_100,ic_bajo,ic_alto,pct_de_los_ksi
+Seguir muy de cerca,2419,82,3.39,2.74,4.19,1.97
+Maniobra indebida,3937,226,5.74,5.06,6.51,5.44
+Reacción a otro vehículo,2202,133,6.04,5.12,7.11,3.2
+Falla del vehículo,556,35,6.29,4.56,8.63,0.84
+Distracción del conductor,11703,783,6.69,6.25,7.16,18.85
+No ceder el paso,3830,291,7.6,6.8,8.48,7.01
+Vía o entorno,1264,99,7.83,6.48,9.44,2.38
+Sin especificar,12190,1139,9.34,8.84,9.87,27.43
+Condición del conductor,1645,170,10.33,8.95,11.9,4.09
+Irrespeto a señales,2559,286,11.18,10.01,12.46,6.89
+Alcohol o drogas,1944,244,12.55,11.15,14.1,5.88
+Error de peatón o ciclista,852,112,13.15,11.04,15.58,2.7
+Exceso de velocidad o agresividad,3808,552,14.5,13.41,15.65,13.29
+Otra causa,2,1,50.0,9.45,90.55,0.02

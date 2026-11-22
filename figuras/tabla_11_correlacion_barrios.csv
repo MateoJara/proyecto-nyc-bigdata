@@ -1,0 +1,9 @@
+,tasa_ksi_noche,tasa_lesion_noche,pct_alcohol_velocidad,tasa_dwi,brecha,sensibilidad_lluvia,pct_ksi_de_noche,pct_peatones_ksi_noche
+tasa_ksi_noche,1.0,0.853,0.126,0.14,0.668,-0.291,0.632,-0.005
+tasa_lesion_noche,0.853,1.0,0.004,0.264,0.504,-0.223,0.515,0.012
+pct_alcohol_velocidad,0.126,0.004,1.0,0.352,-0.209,-0.218,0.217,-0.362
+tasa_dwi,0.14,0.264,0.352,1.0,-0.564,-0.131,0.169,-0.228
+brecha,0.668,0.504,-0.209,-0.564,1.0,-0.068,0.375,0.176
+sensibilidad_lluvia,-0.291,-0.223,-0.218,-0.131,-0.068,1.0,-0.246,-0.02
+pct_ksi_de_noche,0.632,0.515,0.217,0.169,0.375,-0.246,1.0,-0.043
+pct_peatones_ksi_noche,-0.005,0.012,-0.362,-0.228,0.176,-0.02,-0.043,1.0

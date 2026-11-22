@@ -87,7 +87,7 @@ ARRESTOS_EMBRIAGUEZ_REGEX = r"INTOXICATED"
 # importa: se usa el primer grupo que coincida y lo que no coincide queda en "Otra causa".
 SIN_CAUSA = "Sin especificar"
 GRUPOS_CAUSA = [
-    ("Alcohol o drogas", r"ALCOHOL|DRUGS|PRESCRIPTION"),
+    ("Alcohol o drogas", r"ALCOHOL|DRUG|PRESCRIPTION"),
     ("Exceso de velocidad o agresividad", r"UNSAFE SPEED|AGGRESSIVE"),
     ("Distracción del conductor", r"INATTENTION|DISTRACTION|CELL PHONE|TEXTING|ELECTRONIC|HEADPHONES|EATING|NAVIGATION"),
     ("No ceder el paso", r"FAILURE TO YIELD"),

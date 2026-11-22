@@ -1,0 +1,13 @@
+tipo,tabla,procedimiento,justificacion,efecto
+Transformación,personas,Tipo de vehículo del ocupante enlazando vehicle_id con unique_id de vehículos,Separar motociclistas y usuarios de micromovilidad de los demás ocupantes,"100,0 % de los vehicle_id enlazados"
+Transformación,choques,Gravedad KSI por choque a partir de la tabla de personas,Separar una muerte o lesión seria de un golpe leve (falla principal de la primera entrega),19.946 choques KSI de 846.508
+Transformación,choques,Causa agrupada (primer factor) y banderas de alcohol/drogas y velocidad con todos los factores,Conectar cada choque con un tipo de control posible,"29,1 % sin causa (categoría propia, no se imputa)"
+Transformación,choques,"Franja de 3 horas, marca de noche (21:00-05:59) y fecha de la noche",Unidad temporal de la historia; una noche pertenece al día en que empieza,"8 franjas, 3 nocturnas"
+Transformación,choques,Unión del clima de la hora del choque y del calendario de la noche,"Medir el efecto de la lluvia, la nieve, los festivos y los eventos (P7)","100,0 % de los choques con clima"
+Filtro,panel,Choques con hora registrada,Sin hora no se puede asignar a una franja,"846.508 → 846.508 (100,0 % se conserva)"
+Filtro,panel,Choques con barrio (coordenadas dentro de una PUMA),Sin lugar no se puede asignar a un barrio,"846.508 → 778.607 (92,0 % se conserva)"
+Filtro,panel,Choques nocturnos (21:00 a 05:59),El eje de la historia es la noche,"778.607 → 184.655 (23,7 % se conserva)"
+Transformación,panel,Grilla completa barrio × noche × franja nocturna con ceros reales,Base del modelo predictivo; una celda sin choques es información,446.655 celdas
+Transformación,panel,"Historia reciente por celda: choques y arrestos de las [28, 364] noches previas",Dar al modelo la memoria que usaría un analista sin mirar el futuro,12 variables
+Transformación,barrios,Tasas por 100.000 habitantes con la población del censo 2020,Comparar barrios de tamaño distinto,"55 barrios, 5 años (2021-2025)"
+Transformación,barrios,Índice de brecha de control (percentil de riesgo − percentil de control),Resumir en un número el desajuste entre riesgo y control,de −1 a 1; residuo como comprobación

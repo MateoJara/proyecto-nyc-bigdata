@@ -1,0 +1,26 @@
+variable,tipo,razon_de_negocio,se_conoce_antes_de_la_franja
+ksi_franja_previos_364,numérica,Riesgo histórico de esa misma franja en ese barrio,sí
+lesion_franja_previos_364,numérica,Volumen histórico de esa franja,sí
+ksi_previos_364,numérica,Riesgo reciente del barrio,sí
+ksi_previos_28,numérica,Riesgo reciente del barrio,sí
+lesion_previos_364,numérica,Volumen reciente del barrio,sí
+lesion_previos_28,numérica,Volumen reciente del barrio,sí
+alcvel_previos_28,numérica,Choques recientes con alcohol o velocidad,sí
+dwi_previos_364,numérica,Control reciente: arrestos por embriaguez,sí
+dwi_previos_28,numérica,Control reciente: arrestos por embriaguez,sí
+transito_previos_364,numérica,Control reciente: arrestos de tránsito,sí
+precipitacion_mm,numérica,Lluvia prevista,sí
+llueve,numérica,Lluvia prevista,sí
+nieva,numérica,Nieve prevista,sí
+temperatura,numérica,Temperatura prevista,sí
+viento_kmh,numérica,Viento previsto,sí
+fin_de_semana,numérica,Noches de viernes y sábado,sí
+es_festivo,numérica,Festivo,sí
+es_evento,numérica,Noche de evento,sí
+mes_seno,numérica,Estacionalidad (mes en forma circular),sí
+mes_coseno,numérica,Estacionalidad (mes en forma circular),sí
+poblacion_2020,numérica,Tamaño del barrio,sí
+densidad_km2,numérica,Densidad del barrio,sí
+puma,categórica,Barrio,sí
+franja,categórica,"Franja nocturna (21-23, 00-02, 03-05)",sí
+dia_noche,categórica,Día en que empieza la noche,sí

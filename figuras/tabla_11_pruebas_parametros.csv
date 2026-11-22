@@ -1,0 +1,15 @@
+tecnica,parametros,AUC-PR,AUC-ROC,captura_10%
+Regresión logística,"{'regParam': 0.0, 'elasticNetParam': 0.0}",0.0213,0.6464,0.204
+Regresión logística,"{'regParam': 0.0, 'elasticNetParam': 0.5}",0.0213,0.6464,0.204
+Regresión logística,"{'regParam': 0.01, 'elasticNetParam': 0.0}",0.0214,0.6471,0.2107
+Regresión logística,"{'regParam': 0.01, 'elasticNetParam': 0.5}",0.0217,0.6547,0.2107
+Random Forest,"{'numTrees': 40, 'maxDepth': 6}",0.022,0.6478,0.2013
+Random Forest,"{'numTrees': 80, 'maxDepth': 6}",0.0219,0.6503,0.204
+Random Forest,"{'numTrees': 40, 'maxDepth': 9}",0.0209,0.6423,0.1973
+Gradient-Boosted Trees,"{'maxIter': 30, 'maxDepth': 4, 'stepSize': 0.1}",0.02,0.6361,0.1867
+Gradient-Boosted Trees,"{'maxIter': 60, 'maxDepth': 4, 'stepSize': 0.05}",0.0202,0.6367,0.1853
+Gradient-Boosted Trees,"{'maxIter': 30, 'maxDepth': 5, 'stepSize': 0.1}",0.0189,0.6188,0.176
+Red neuronal (MLP),"{'layers': [87, 16, 2], 'maxIter': 50}",0.0186,0.6084,0.1747
+Red neuronal (MLP),"{'layers': [87, 16, 2], 'maxIter': 100}",0.0165,0.5852,0.14
+Red neuronal (MLP),"{'layers': [87, 32, 16, 2], 'maxIter': 50}",0.021,0.6458,0.2027
+Red neuronal (MLP),"{'layers': [87, 32, 16, 2], 'maxIter': 100}",0.017,0.5981,0.1493

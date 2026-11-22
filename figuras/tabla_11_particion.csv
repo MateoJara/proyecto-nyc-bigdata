@@ -1,0 +1,4 @@
+conjunto,desde,hasta,celdas,prevalencia_%
+entrenamiento,2021-01-01,2024-12-31,241065,1.23
+validación,2025-01-01,2025-12-31,60225,1.25
+prueba,2026-01-01,2026-05-30,24750,0.95

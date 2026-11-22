@@ -1,0 +1,3 @@
+# Copiar como .env en la raíz del proyecto en VM1 y poner la clave real de OpenWeather.
+OPENWEATHER_API_KEY=pegar_aqui_la_clave
+# SOCRATA_APP_TOKEN=opcional (token de NYC Open Data, evita límites de descarga)

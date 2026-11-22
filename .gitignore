@@ -14,3 +14,7 @@ __pycache__/
 # Archivos sueltos de Windows
 *.zip
 *.lnk
+
+# Registros y paquetes de resultados
+logs/
+entrega_final_resultados_*.tar.gz

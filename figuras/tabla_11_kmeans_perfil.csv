@@ -1,0 +1,4 @@
+grupo,barrios,poblacion,tasa_ksi_noche,tasa_lesion_noche,pct_alcohol_velocidad,tasa_dwi,brecha,sensibilidad_lluvia,pct_ksi_de_noche,pct_peatones_ksi_noche,rasgos,barrios_ejemplo
+0,18,2820420,10.96,123.4,23.11,37.38,0.12,1.06,35.86,25.88,"alto tasa_ksi_noche, alto pct_alcohol_velocidad, bajo sensibilidad_lluvia, alto pct_ksi_de_noche",Canarsie; Queens Village; Soundview-Castle Hill-Clason Point-Harding Park; Washington Heights South
+1,20,3121525,6.53,82.65,21.18,42.38,-0.38,1.2,28.71,22.92,"bajo tasa_ksi_noche, alto tasa_dwi, bajo brecha",Jamaica; Bensonhurst West; Jackson Heights; West New Brighton-New Brighton-St. George
+2,17,2862245,8.59,102.78,15.44,21.81,0.33,1.22,29.86,32.1,"bajo pct_alcohol_velocidad, bajo tasa_dwi, alto brecha, alto pct_peatones_ksi_noche",Flushing; Lenox Hill-Roosevelt Island; Upper West Side; Hudson Yards-Chelsea-Flat Iron-Union Square

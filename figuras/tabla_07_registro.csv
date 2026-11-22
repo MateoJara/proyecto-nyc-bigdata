@@ -1,0 +1,12 @@
+tabla,paso,registros
+choques,1. registros descargados (solo el periodo),846508
+vehiculos,1. registros descargados (solo el periodo),1711019
+personas,1. registros descargados (solo el periodo),3080985
+choques,"2. escrito en plata (periodo, sin duplicados)",846508
+vehiculos,"2. escrito en plata (periodo, sin duplicados)",1711019
+personas,2. dentro del periodo 2019-01-01 a 2026-05-31,3080985
+personas,3. sin UNIQUE_ID duplicados,3080985
+personas,4. escrito en plata,3080985
+poblacion,PUMAs con población 2020,55
+clima,horas en plata (Open-Meteo),64984
+calendario,fechas de festivos y eventos,158
